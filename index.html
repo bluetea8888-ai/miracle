@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en" data-type="software" data-radius="soft" data-ground="painting" data-buttons="arrow" data-motion>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Miracle Education: AI and Web3 training for working teams</title>
+  <meta name="description" content="Miracle teaches AI and Web3 through applied projects, then helps teams use them in engineering, research and operations. Nine capability areas, one reviewed path.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Miracle Education: AI and Web3 training for working teams">
+  <meta property="og:description" content="Applied AI and Web3 capability for professionals and teams. Nine capability areas, one reviewed path.">
+  <meta property="og:image" content="share.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#161c1a">
+  <meta name="site-kind" content="software">
+  <meta name="page-type" content="software">
+  <!-- <link rel="canonical" href="https://[client-domain]/"> -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mona+Sans:wdth,wght@75..125,400..600&family=Geist+Mono:wght@400..500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/system.css">
+  <link rel="stylesheet" href="assets/ui/cards.css">
+  <link rel="stylesheet" href="assets/motion/motion.css">
+  <link rel="stylesheet" href="assets/backgrounds/backgrounds.css">
+  <link rel="stylesheet" href="assets/layout/layout.css">
+  <link rel="stylesheet" href="assets/icons/icon.css">
+  <link rel="stylesheet" href="assets/ui/base.css">
+  <link rel="stylesheet" href="assets/ui/checklist/fragment.css">
+  <link rel="stylesheet" href="assets/ui/diff-review/fragment.css">
+  <link rel="stylesheet" href="assets/ui/doc/fragment.css">
+  <link rel="stylesheet" href="assets/ui/window/fragment.css">
+  <link rel="stylesheet" href="assets/moments/iris-opens/moment.css">
+  <link rel="stylesheet" href="miracle.css">
+
+  <style>
+    :root {
+      --p-bg: #161c1a; --p-surface: #1f2725; --p-ink: #e3e2da; --p-muted: #8e948d;
+      --p-accent: #9fc7b8; --p-accent-ink: #161c1a; --p-action: #9fc7b8; --p-action-ink: #161c1a;
+      --p-inv-bg: #e3e2da; --p-inv-surface: #d3d2cb; --p-inv-ink: #161c1a; --p-inv-muted: #555a55;
+      --p-inv-accent: #161c1a; --p-inv-accent-ink: #e3e2da; --p-inv-action: #161c1a; --p-inv-action-ink: #e3e2da;
+      --font-display: "Mona Sans", system-ui, sans-serif;
+      --font-text: "Mona Sans", system-ui, sans-serif;
+      --font-mono: "Geist Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+      --display-weight: 500;
+      --display-tracking: -0.03em;
+      --display-tracking-xl: -0.04em;
+      --display-stretch: 104%;
+      --ly-scale: 0.96;
+    }
+
+    #platform .capability-card .panel { --p-h: 318px; }
+    #platform .capability-card .panel--queue { --p-h: 318px; }
+    #programs .program-visual { min-height: 480px; }
+    @media (max-width: 639px) {
+      #platform .capability-card .panel,
+      #platform .capability-card .panel--queue { --p-h: 190px; }
+      #programs .program-visual { min-height: 330px; }
+    }
+  </style>
+  <script>document.documentElement.classList.add('m-enter');setTimeout(()=>document.documentElement.classList.add('m-enter-done'),700)</script>
+  <script>document.documentElement.classList.add('mo-js');setTimeout(()=>document.documentElement.classList.add('mo-safe'),2500)</script>
+  <link rel="modulepreload" href="assets/moments/moments.js">
+  <link rel="modulepreload" href="assets/moments/lib.js">
+  <link rel="modulepreload" href="assets/moments/iris-opens/moment.js">
+  <script src="assets/backgrounds/backgrounds.js"></script>
+</head>
+<body>
+<!-- type: software. deal: hero centred, nav-mega, footer-dark, close-word, dark-band, arrow buttons, dots mark, hero bg-halo. moment: iris-opens in method. -->
+
+<header class="nav">
+  <div class="wrap nav__bar">
+    <a class="skip-link" href="#top">Skip to content</a>
+    <a class="nav__logo" href="#top"><span class="mark" data-mark="dots" aria-hidden="true"></span>Miracle</a>
+    <nav class="nav__links" aria-label="Main">
+      <div class="nav__item">
+        <a class="nav__link" href="#platform">Capabilities
+          <svg class="chev" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <div class="nav__menu">
+          <div class="wrap grid">
+            <div class="menu-col span-3">
+              <p class="t-label">Learning</p>
+              <a href="#program-ai">AI fluency<span>Use AI with better judgment</span></a>
+              <a href="#program-web3">Web3 builder<span>Work with wallets and contracts</span></a>
+              <a href="#program-enterprise">Enterprise studio<span>Build capability around a live case</span></a>
+            </div>
+            <div class="menu-col span-3">
+              <p class="t-label">Applied work</p>
+              <a href="#review-contracts">Smart contracts<span>Review code, tests and risk</span></a>
+              <a href="#review-rwa">Research<span>Read chain data and documents</span></a>
+              <a href="#ops-support">AI operations<span>Support, governance and evidence</span></a>
+            </div>
+            <a class="menu-card span-4 start-9" href="#platform">
+              <div class="panel">
+                <div class="hero__window miracle-os" style="height:100%;min-height:0;-webkit-mask-image:none;mask-image:none;border-radius:0">
+                  <div class="miracle-os__frame" style="top:20px;width:calc(100% - 40px);height:calc(100% - 40px)">
+                    <div class="miracle-os__bar"><span class="miracle-os__dots"><i></i><i></i><i></i></span><b>capability.map</b><span>AI + WEB3</span></div>
+                    <div class="miracle-os__body" style="grid-template-columns:1fr"></div>
+                  </div>
+                </div>
+              </div>
+              <span class="t-card">One capability loop</span>
+              <span class="t-small muted">Learning, engineering, research and operations.</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="nav__item"><a class="nav__link" href="#programs">Programs</a></div>
+      <div class="nav__item"><a class="nav__link" href="#method">Method</a></div>
+      <div class="nav__item"><a class="nav__link" href="#questions">Questions</a></div>
+    </nav>
+    <div class="nav__actions">
+      <a class="btn btn--primary" href="#contact">Request a project review</a>
+    </div>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-label="Menu">
+      <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M2 5h14M2 13h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero hero--centred bg-halo" data-enter aria-labelledby="hero-h">
+    <div class="wrap"><div class="hero-text">
+      <div class="hero__c">
+        <a class="pill" href="#platform"><span>Miracle capability system</span><span class="muted">Nine applied areas</span></a>
+        <h1 id="hero-h">AI and Web3 training for working teams</h1>
+        <p class="hero__lead">Miracle teaches AI and Web3 through applied projects, then helps teams use them in engineering, research, operations and governance. Nine capability areas, one reviewed path.</p>
+        <div class="btn-row">
+          <a class="btn btn--primary" href="#contact">Request a project review<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a>
+          <a class="btn btn--secondary" href="#programs">See programs</a>
+        </div>
+      </div>
+
+      <div class="hero__window miracle-os" role="img" aria-label="Miracle capability workspace showing an applied AI and Web3 pathway with reviewed project evidence">
+        <div class="ui miracle-os__frame" data-visual aria-hidden="true">
+          <div class="miracle-os__bar">
+            <span class="miracle-os__dots"><i></i><i></i><i></i></span>
+            <b>miracle / capability-map</b><span>AI + WEB3</span><span>Applied path</span>
+          </div>
+          <div class="miracle-os__body">
+            <aside class="miracle-os__side">
+              <p class="miracle-os__label">Workspace</p>
+              <div class="miracle-os__nav"><span class="is-on">Learning path</span><span>Applied lab</span><span>Evidence</span><span>Review</span></div>
+            </aside>
+            <div class="miracle-os__main">
+              <div class="miracle-os__title"><h3>AI × Web3 capability map</h3><span>In review</span></div>
+              <p class="miracle-os__sub">A single path from concepts to reviewed work.</p>
+              <div class="miracle-os__path">
+                <div class="miracle-os__step is-done"><span class="miracle-os__num">01</span><div><b>AI judgment and evaluation</b><small>Models, limits, sources, human review</small></div><span class="miracle-os__status">Complete</span></div>
+                <div class="miracle-os__step is-done"><span class="miracle-os__num">02</span><div><b>Workflow design with AI</b><small>Research, prototyping, measurement</small></div><span class="miracle-os__status">Complete</span></div>
+                <div class="miracle-os__step is-current"><span class="miracle-os__num">03</span><div><b>Smart-contract review lab</b><small>Wallets, tests, evidence, remediation</small></div><span class="miracle-os__status">In progress</span></div>
+              </div>
+            </div>
+            <aside class="miracle-os__evidence">
+              <p class="miracle-os__label">Evidence</p>
+              <div class="miracle-os__record">
+                <div class="miracle-os__record-head"><span>M</span>Applied capability record</div>
+                <h4>AI + Web3 Builder</h4>
+                <p>Learning evidence from one reviewed project</p>
+                <div class="miracle-os__skills"><span><i></i>AI judgment</span><span><i></i>Web3 practice</span></div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </div></div>
+  </section>
+
+  <section class="section g2" id="platform" aria-labelledby="platform-h">
+    <div class="wrap">
+      <div class="group">
+        <div class="section-head"><h2 id="platform-h">AI and Web3 services. <span class="muted">Each area combines practice, tools and human review.</span></h2></div>
+        <div class="grid">
+          <article class="card card--row card--open span-6 capability-card" id="platform-learning">
+            <h3>AI education services</h3>
+            <p>Role-based labs teach AI use, evaluation and responsible review through a live workflow.</p>
+            <div class="panel" role="img" aria-label="AI fluency path with completed learning steps">
+              <div class="stage stage--fade-b"><div class="at-rise fit" style="--fit-max:390px;--ax:max(24px,50% - 195px);--ay:42px;--ay-sm:16px">
+                <div class="ui ui-panel ui-checks" data-ui="checklist" data-ui-loop aria-hidden="true">
+                  <div class="ui-checks__head"><div class="ui-title">AI fluency path</div><span class="ui-spacer"></span><div class="ui-meta">1 of 3</div></div>
+                  <div class="ui-checks__bar"><i style="--k:.33"></i></div>
+                  <ul class="ui-checks__list">
+                    <li class="ui-check is-done"><span class="ui-check__box"><svg viewBox="0 0 16 16"><path d="m4.5 8.2 2.3 2.3 4.7-5"/></svg></span><span class="ui-check__label">Frame the work</span></li>
+                    <li class="ui-check"><span class="ui-check__box"><svg viewBox="0 0 16 16"><path d="m4.5 8.2 2.3 2.3 4.7-5"/></svg></span><span class="ui-check__label">Test AI assumptions</span></li>
+                    <li class="ui-check"><span class="ui-check__box"><svg viewBox="0 0 16 16"><path d="m4.5 8.2 2.3 2.3 4.7-5"/></svg></span><span class="ui-check__label">Review the result</span></li>
+                  </ul>
+                </div>
+              </div></div>
+            </div>
+          </article>
+
+          <article class="card card--row card--open span-6 capability-card" id="review-contracts">
+            <h3>Web3 engineering review</h3>
+            <p>Code understanding, tests and security pre-checks support a reviewed smart-contract change.</p>
+            <div class="panel" role="img" aria-label="A reviewer applies a timeout suggestion to smart-contract client code">
+              <div class="stage stage--fade-b"><div class="at-rise fit" style="--fit-max:500px;--ax:max(20px,50% - 250px);--ay:34px;--ay-sm:14px">
+                <div class="ui ui-panel ui-diff" aria-hidden="true">
+                  <div class="ui-diff__head">
+                    <svg class="ui-icon ui-diff__fold" viewBox="0 0 16 16" aria-hidden="true"><path d="m4.5 6.25 3.5 3.5 3.5-3.5"/></svg>
+                    <span class="ui-diff__tool"><img src="assets/ui/icons/typescript.svg" alt="" width="16" height="16" loading="lazy"></span>
+                    <span class="ui-diff__repo">escrow-vault</span><i class="ui-diff__slash">/</i><span class="ui-diff__path"><span class="ui-diff__dir">contracts/client/</span><b>withdraw.ts</b></span>
+                    <span class="ui-spacer"></span><span class="ui-diff__stat"><b class="is-add">+4</b><b class="is-del">−3</b></span>
+                  </div>
+                  <div class="ui-diff__hunk"><span>@@ -38,10 +38,11 @@</span> <em class="ui-diff__sig">function withdraw(job, i = 0) {</em></div>
+                  <div class="ui-diff__lines">
+                    <div class="ui-diff__ln"><i>38</i><i>38</i><span class="ui-diff__code"><span class="ui-diff__ind">  </span><span class="k">const</span> cfg = <span class="f">loadVault</span>(<span class="s">"escrow"</span>);</span></div>
+                    <div class="ui-diff__ln is-del"><i>39</i><i></i><span class="ui-diff__code"><span class="ui-diff__ind">  </span><span class="k">while</span> (i++ &lt; <mark class="ui-diff__w">5</mark>) {</span></div>
+                    <div class="ui-diff__ln is-add"><i></i><i>39</i><span class="ui-diff__code"><span class="ui-diff__ind">  </span><span class="k">while</span> (i++ &lt; <mark class="ui-diff__w">cfg.max</mark>) {</span></div>
+                    <div class="ui-diff__ln is-target"><i>40</i><i>40</i><span class="ui-diff__code"><span class="ui-diff__ind">    </span><span class="k">const</span> res = <span class="k">await</span> <span class="f">submit</span>(job, <mark class="ui-diff__w">8000</mark>);</span></div>
+                    <div class="ui-diff__sug"><div class="ui-diff__ln is-add"><i></i><i>40</i><span class="ui-diff__code"><span class="ui-diff__ind">    </span><span class="k">const</span> res = <span class="k">await</span> <span class="f">submit</span>(job, <mark class="ui-diff__w">cfg.timeout</mark>);</span></div></div>
+                    <div class="review-mini"><span class="ui-avatar" data-tone="1">M</span><span><b>Miracle review</b><small>Use the configured timeout and test the refund path.</small></span><span class="review-mini__done">Applied</span></div>
+                  </div>
+                </div>
+              </div></div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <div class="group">
+        <div class="grid">
+          <article class="card card--row card--open span-6 capability-card" id="review-rwa">
+            <h3>RWA review process</h3>
+            <p>Read contracts, identify missing material and keep each finding tied to its source clause.</p>
+            <div class="panel panel--evidence" role="img" aria-label="An RWA memo with a source-linked fairness review note">
+              <div class="stage stage--fade-b"><div class="at-corner to-edge" style="--ax:32px;--ay:34px;--ay-sm:14px">
+                <div class="ui ui-doc" data-ui="doc" data-ui-still aria-hidden="true">
+                  <article class="ui-doc__page">
+                    <div class="ui-doc__label">RWA operating memo, review 2</div>
+                    <div class="ui-doc__title">4. Rights and transfer restrictions</div>
+                    <div class="ui-doc__text">The issuer must reconcile the asset register with the token ledger <mark class="ui-doc__mark is-on">every quarter</mark>.</div>
+                    <div class="ui-doc__text">Transfers require <mark class="ui-doc__mark" data-kind="Missing evidence" data-msg="The draft names no independent verification source." data-where="Section 4.3">independent verification</mark> before settlement.</div>
+                    <div class="ui-doc__text">Redemption windows and fees must match the terms in the offering memorandum.</div>
+                    <div class="ui-doc__text">The board reviews exceptions and records the decision before the next distribution.</div>
+                  </article>
+                  <aside class="ui-doc__note is-on"><div class="ui-doc__kind"><span class="ui-doc__dot"></span><span>Missing evidence</span></div><div class="ui-doc__msg">The draft names no independent verification source.</div><div class="ui-doc__where">Section 4.3</div></aside>
+                </div>
+              </div></div>
+            </div>
+          </article>
+
+          <article class="card card--row card--open span-6 capability-card" id="ops-support">
+            <h3>Web3 support services</h3>
+            <p>AI support and governance workflows explain chain state, surface exceptions and leave a review trail.</p>
+            <div class="panel panel--queue" role="img" aria-label="A Web3 support queue with wallet and governance requests, statuses and review ages">
+              <div class="stage stage--fade-b"><div class="at-rise fit" style="--fit-max:520px;--ax:max(20px,50% - 260px);--ay:38px;--ay-sm:14px">
+                <div class="ui ui-panel ui-win" data-ui="window" data-ui-still aria-hidden="true">
+                  <div class="ui-win__bar"><span class="ui-dots"><i></i><i></i><i></i></span><span class="ui-win__crumb"><b>Miracle / support</b> <i>/</i> <b>Open</b></span><span class="ui-spacer"></span><span class="ui-win__search"><span class="ui-win__ph">Search requests</span></span></div>
+                  <div class="ui-win__body" style="grid-template-columns:1fr">
+                    <div class="ui-win__main">
+                      <div class="ui-win__cols"><span>Request</span><span>Issue</span><span>Status</span><span>Age</span></div>
+                      <ul class="ui-win__rows">
+                        <li class="ui-win__row"><span class="ui-avatar" data-tone="1">WB</span><span class="ui-win__who">Wallet · Base</span><span class="ui-win__sub">Transaction reverted after approval</span><span class="ui-win__st is-you">Needs you</span><span class="ui-win__age">2m</span></li>
+                        <li class="ui-win__row"><span class="ui-avatar" data-tone="3">RW</span><span class="ui-win__who">RWA · Registry</span><span class="ui-win__sub">Transfer restriction evidence</span><span class="ui-win__st">Open</span><span class="ui-win__age">7m</span></li>
+                        <li class="ui-win__row"><span class="ui-avatar" data-tone="4">DT</span><span class="ui-win__who">DAO · Treasury</span><span class="ui-win__sub">Proposal conflicts with budget</span><span class="ui-win__st">Open</span><span class="ui-win__age">12m</span></li>
+                        <li class="ui-win__row"><span class="ui-avatar" data-tone="2">SC</span><span class="ui-win__who">Contract · Mainnet</span><span class="ui-win__sub">Withdrawal path needs review</span><span class="ui-win__st is-done">Solved</span><span class="ui-win__age">21m</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="programs" aria-labelledby="programs-h">
+    <div class="wrap">
+      <div class="section-head"><h2 id="programs-h">Programs and learning services. <span class="muted">Choose the starting level, then apply it to a real brief.</span></h2></div>
+      <div class="grid fill">
+        <div class="span-5 program-copy">
+          <ul class="rows">
+            <li id="program-ai"><span class="rows__name">AI Fluency Lab</span><p>For professionals using AI in research, content and decisions.</p><span class="rows__value">Applied</span></li>
+            <li id="program-web3"><span class="rows__name">Web3 Builder Academy</span><p>For developers and analysts working with wallets, contracts and on-chain data.</p><span class="rows__value">Project-led</span></li>
+            <li id="program-enterprise"><span class="rows__name">Enterprise Capability Studio</span><p>For teams adopting AI or Web3 around one live use case.</p><span class="rows__value">Custom</span></li>
+          </ul>
+          <a class="link" href="#contact">Ask about a pathway</a>
+        </div>
+        <div class="span-6 start-7 program-visual" data-visual role="img" aria-label="Four-step learning map: AI foundations, workflow lab, Web3 practice and a reviewed project">
+          <div class="ui pathway-map" aria-hidden="true">
+            <div class="pathway-map__head"><span>Learning pathway</span><span>Applied track</span></div>
+            <div class="pathway-map__step"><span class="pathway-map__n">01</span><div><b>AI foundations</b><small>Models, prompts, sources and limits</small></div><span>Learn</span></div>
+            <div class="pathway-map__step is-on"><span class="pathway-map__n">02</span><div><b>Workflow lab</b><small>Research, prototype and evaluate</small></div><span>Apply</span></div>
+            <div class="pathway-map__step"><span class="pathway-map__n">03</span><div><b>Web3 practice</b><small>Wallets, contracts and chain evidence</small></div><span>Build</span></div>
+            <div class="pathway-map__step"><span class="pathway-map__n">04</span><div><b>Reviewed project</b><small>Human review and capability record</small></div><span>Evidence</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section ground-inverse" id="method" aria-labelledby="method-h" data-moment="iris-opens" data-moment-opts='{"from":"base"}'>
+    <div class="wrap">
+      <div class="section-head"><h2 id="method-h">Delivery process.</h2><p>From first brief to reviewed pilot, one process connects capability, applied work and evidence.</p></div>
+      <div class="grid fill">
+        <div class="span-5">
+          <ol class="method-list">
+            <li><span>01</span><div><h3>Project team</h3><p>We define the audience, current workflow, constraints and decision to improve.</p></div></li>
+            <li><span>02</span><div><h3>AI and Web3 baseline</h3><p>Participants learn the AI or Web3 mechanics that the project uses.</p></div></li>
+            <li><span>03</span><div><h3>Workflow steps</h3><p>The team turns the brief into a tested prototype, code change or operating process.</p></div></li>
+            <li><span>04</span><div><h3>Evidence review process</h3><p>We assess accuracy, failure modes, cost and readiness before recommending wider use.</p></div></li>
+          </ol>
+        </div>
+        <div class="span-6 start-7">
+          <div class="ui delivery-board" data-visual role="img" aria-label="A reviewed delivery board moving from scoped work to a pilot decision">
+            <div class="delivery-board__head"><span><b>Engagement map</b> / applied path</span><span>Review gate</span></div>
+            <p class="delivery-board__title">AI support workflow</p>
+            <p class="delivery-board__meta">Capability, delivery and evidence in one loop.</p>
+            <div class="delivery-board__rows">
+              <div class="delivery-board__row"><span class="delivery-board__n">01</span><div><b>Workflow scoped</b><small>Audience, risk and decision recorded</small></div><span class="delivery-board__state">Done</span></div>
+              <div class="delivery-board__row"><span class="delivery-board__n">02</span><div><b>Team baseline</b><small>Applied lab and review completed</small></div><span class="delivery-board__state">Done</span></div>
+              <div class="delivery-board__row is-on"><span class="delivery-board__n">03</span><div><b>Pilot in review</b><small>Tests, sources and failure modes</small></div><span class="delivery-board__state">Review</span></div>
+              <div class="delivery-board__row"><span class="delivery-board__n">04</span><div><b>Scale decision</b><small>Evidence pack and next actions</small></div><span class="delivery-board__state">Next</span></div>
+            </div>
+            <div class="delivery-board__foot"><span>Evidence before scale</span><span class="delivery-board__bar"><i></i></span><span>62%</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="questions" aria-labelledby="questions-h">
+    <div class="wrap">
+      <div class="grid fill">
+        <div class="span-5 section-head">
+          <h2 id="questions-h">Program and project questions.</h2>
+          <div class="ui faq-map" data-visual role="img" aria-label="The four questions a project discovery covers: audience, baseline, evidence and decision owner">
+            <span>Audience</span><span>Baseline</span><span>Evidence</span><span>Decision owner</span>
+          </div>
+        </div>
+        <div class="span-6 start-7 faq">
+          <details><summary>Who are the programmes for?</summary><p>Professionals, developers, analysts and teams that need applied AI or Web3 capability. Technical pathways assume some software experience.</p></details>
+          <details><summary>How do you handle AI risk?</summary><p>We define data scope, failure modes, human review and evidence before launch. Consequential decisions stay with accountable people.</p></details>
+          <details><summary>Do you issue accredited qualifications?</summary><p>We provide a record of applied work and review. We do not claim external accreditation unless a programme states it.</p></details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact" aria-labelledby="contact-h">
+    <div class="wrap">
+      <div class="section-head"><h2 id="contact-h">Project contact.</h2><p>Tell us who needs the capability and what the team is trying to change.</p></div>
+      <div class="grid fill">
+        <div class="span-5">
+          <p class="t-lead">A useful first conversation names the audience, the workflow and the evidence the team needs before it can make a confident decision.</p>
+          <p>We can start with capability, an applied pilot or an existing AI and Web3 workflow that needs review.</p>
+          <div class="ui contact-map" data-visual role="img" aria-label="A first project review maps the audience, current workflow, evidence and decision owner">
+            <span>Audience</span><span>Current workflow</span><span>Evidence</span><span>Decision owner</span>
+          </div>
+        </div>
+        <div class="span-6 start-7 contact-shell">
+          <form class="form" action="mailto:hello@miracle.example" method="post" enctype="text/plain" data-endpoint="" data-sent="Your project brief is ready." novalidate>
+            <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="f-name-err"><p class="field__error" id="f-name-err" hidden>Write the name we should address.</p></div>
+            <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" required aria-describedby="f-email-err"><p class="field__error" id="f-email-err" hidden>Write an email address with an @.</p></div>
+            <div class="field"><label for="f-org">Organization</label><input id="f-org" name="organization" type="text" autocomplete="organization"></div>
+            <div class="field"><label for="f-interest">Starting point</label><select id="f-interest" name="interest" required><option value="">Choose one</option><option>AI Fluency Lab</option><option>Web3 Builder Academy</option><option>Enterprise Capability Studio</option><option>Web3 engineering</option><option>AI operations or governance</option><option>Research and evidence</option></select></div>
+            <div class="field field--full"><label for="f-brief">Project brief</label><textarea id="f-brief" name="brief" rows="5" required aria-describedby="f-brief-err"></textarea><p class="field__error" id="f-brief-err" hidden>Write the audience, workflow and result you need.</p></div>
+            <div class="btn-row"><button class="btn btn--primary" type="submit">Send project brief<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></button></div>
+            <p class="form__status" role="status" data-form-status></p>
+            <p class="t-small">This opens your mail app; nothing is sent until you send the message there.</p>
+          </form>
+        </div>
+      </div>
+      <div class="contact-next" data-visual role="img" aria-label="The next steps after a project enquiry: scope the work, run the pilot and review evidence">
+        <span>01 / Scope</span><span>02 / Pilot</span><span>03 / Review</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer closing footer--dark ground-inverse" id="footer" aria-labelledby="close-h">
+  <div class="wrap">
+    <div class="closing__cta close--word">
+      <div class="section-head--split">
+        <div><h2 id="close-h">Applied services review.</h2><p class="t-lead">Start with one programme, one workflow or one reviewed pilot.</p></div>
+        <a class="btn btn--primary" href="#contact">Request a project review<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a>
+      </div>
+      <div class="footer-loop" data-visual role="img" aria-label="The Miracle learning and delivery loop: education, applied engineering and reviewed operations">
+        <span>Education</span><span>Engineering</span><span>Operations</span>
+      </div>
+      <p class="close__word" aria-hidden="true">Miracle</p>
+    </div>
+    <div class="closing__links">
+      <div class="grid">
+        <div class="span-4 stack-4">
+          <a class="footer__mark nav__logo" href="#top"><span class="mark" data-mark="dots" aria-hidden="true"></span>Miracle</a>
+          <p class="footer__lede">AI and Web3 education, applied with your team.</p>
+        </div>
+        <div class="span-2 footer__col"><h3>Platform</h3><ul><li><a href="#platform">Capabilities</a></li><li><a href="#method">Method</a></li></ul></div>
+        <div class="span-2 footer__col"><h3>Learn</h3><ul><li><a href="#programs">Programs</a></li><li><a href="#questions">Questions</a></li></ul></div>
+        <div class="span-2 footer__col"><h3>Company</h3><ul><li><a href="#contact">Contact</a></li><li><a href="#top">Back to top</a></li></ul></div>
+        <div class="span-2 footer__col"><h3>Business</h3><ul><li><a href="#platform">AI operations</a></li><li><a href="#platform">Web3 review</a></li></ul></div>
+      </div>
+      <div class="footer__legal">
+        <span>&copy; 2026 Miracle Education Consultancy Sdn Bhd.</span>
+        <span>Malaysia</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script type="module" src="assets/system.js"></script>
+<script type="module" src="assets/motion/motion.js"></script>
+<script type="module" src="assets/layout/layout.js"></script>
+</body>
+</html>
